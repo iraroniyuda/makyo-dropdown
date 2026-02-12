@@ -20,9 +20,10 @@ This component supports:
 ### As a dependency (Create React App / any React app)
 
 ```bash
-npm install <your-github-or-npm-package>
+npm install git+https://github.com/iraroniyuda/makyo-dropdown.git
 # or
-yarn add <your-github-or-npm-package>
+yarn add git+https://github.com/iraroniyuda/makyo-dropdown.git
+
 ```
 
 
@@ -32,7 +33,7 @@ yarn add <your-github-or-npm-package>
 
 ```tsx
 import React, { useMemo, useState } from "react";
-import { SelectDropdown, type DropdownOption } from "<package>";
+import { SelectDropdown, type DropdownOption } from "makyo-dropdown";
 
 type Item = { id: number; name: string };
 
@@ -67,7 +68,7 @@ export default function ExampleSingle() {
 
 ```tsx
 import React, { useMemo, useState } from "react";
-import { SelectDropdown, type DropdownOption } from "<package>";
+import { SelectDropdown, type DropdownOption } from "makyo-dropdown";
 
 type Item = { id: number; name: string };
 
