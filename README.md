@@ -203,6 +203,7 @@ npm run storybook
 
 ## Links (Submission)
 
-- GitHub (public): <TBD>
-- Deployment: <TBD>
-- Storybook (public): <TBD>
+- GitHub (public): https://github.com/iraroniyuda/makyo-dropdown
+- Deployment: https://makyo-dropdown-gamma.vercel.app
+- Storybook (public): https://698df1e6f2beb530a839b426-zuzaozhtjl.chromatic.com/
+
