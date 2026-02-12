@@ -3,7 +3,6 @@ import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
-
 import { storybookTest } from "@storybook/addon-vitest/vitest-plugin";
 import { playwright } from "@vitest/browser-playwright";
 import path from "node:path";
@@ -14,9 +13,15 @@ const dirname =
     ? __dirname
     : path.dirname(fileURLToPath(import.meta.url));
 
-
 export default defineConfig({
   plugins: [tailwindcss(), react()],
+
+  // ✅ IMPORTANT: separate demo build output from tsup dist/
+  build: {
+    outDir: "dist-demo",
+    emptyOutDir: true,
+  },
+
   test: {
     projects: [
       {
